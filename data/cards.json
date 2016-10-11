@@ -1,0 +1,16 @@
+[
+   {
+      "name":"Card",
+      "number":"1",
+      "image":"public/images/catty.jpg",
+      "imageName":"Cattty!!!",
+      "firstNameInfo":"Age",
+      "firstNumberInfo":"3",
+      "secondNameInfo":"Name",
+      "secondNumberInfo":"Fluffy",
+      "thirdNameInfo":"Weight",
+      "thirdNumberInfo":"15 kg",
+      "fourthNameInfo":"Cuteness",
+      "fourthNumberInfo":"10000"
+   }
+]

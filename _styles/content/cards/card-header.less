@@ -1,0 +1,51 @@
+@color_1: #010101;
+
+.card-header {
+  height: 65px;
+  border-bottom: 1px solid rgba(191, 191, 191, .5);
+  > p {
+    display: block;
+    letter-spacing: -1px;
+    margin: 0;
+    padding-left: 16px;
+    opacity: 0.6;
+    color: @color_1;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  > label {
+    display: inline-block;
+    > span {
+      display: inline-block;
+      width: 148px;
+      height: 29px;
+      float: right;
+      margin: 12px 0 0 14px;
+      opacity: .87;
+      color: @color_1;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 20px;
+      cursor: pointer;
+    }
+  }
+  > input[type=checkbox] {
+    display: none;
+    & + label {
+      &:before {
+        display: inline-block;
+        margin-left: 14px;
+        margin-top: 16px;
+        content: url(/public/images/cards/checkbox-empty.png);
+        cursor: pointer;
+      }
+    }
+    &:checked {
+      & + label {
+        &:before {
+          content: url(/public/images/cards/checkbox-checked.png);
+        }
+      }
+    }
+  }
+}
